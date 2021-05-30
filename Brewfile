@@ -15,6 +15,9 @@ brew "java"
 brew "maven"
 brew "nvim"
 brew "mas"
+brew "fzf"
+brew "rg"
+brew "fd"
 
 # Casks
 cask "iterm2"
