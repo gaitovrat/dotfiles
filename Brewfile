@@ -22,9 +22,12 @@ brew "fd"
 
 # Casks
 cask "iterm2"
+cask "jetbrains-toolbox"
+cask "visual-studio-code"
 
 # Mac app store apps
 mas "Telegram", id: 747648890
 mas "Spark", id: 1176895641
 mas "XCode", id: 497799835
-mas "Vimari", id: 1480933944
+mas "Bear", id: 1091189122
+
