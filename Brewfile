@@ -12,3 +12,4 @@ brew "mas"
 
 # Mac app store apps
 mas "Telegram", id: 747648890
+mas "Spark", id: 1176895641
