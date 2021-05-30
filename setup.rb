@@ -26,6 +26,7 @@ print 'Link vim(.vimrc) config to ', home + '.vimrc', new_line
 puts ''
 FileUtils.ln_s dir + 'vim/.vimrc', home + '.vimrc', force: true
 
+# Install neovim config
 print 'Link neovim(init.vim) config to ', home + '.config/nvim/init.vim', new_line
 puts ''
 FileUtils.mkdir_p home + '.config/nvim'
