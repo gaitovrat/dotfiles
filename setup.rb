@@ -31,3 +31,8 @@ print 'Link neovim(init.vim) config to ', home + '.config/nvim/init.vim', new_li
 puts ''
 FileUtils.mkdir_p home + '.config/nvim'
 FileUtils.ln_s dir + 'vim/init.vim', home + '.config/nvim/init.vim', force: true
+
+# Setup fzf
+puts 'Setup fzf'
+puts ''
+system '$(brew --prefix)/opt/fzf/install'
