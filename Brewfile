@@ -16,6 +16,9 @@ brew "maven"
 brew "nvim"
 brew "mas"
 
+# Casks
+cask "iterm2"
+
 # Mac app store apps
 mas "Telegram", id: 747648890
 mas "Spark", id: 1176895641
