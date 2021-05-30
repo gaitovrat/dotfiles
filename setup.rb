@@ -20,3 +20,13 @@ system 'sudo xcodebuild -runFirstLaunch'
 print 'Link zsh config to ', home + '.zshrc', new_line 
 puts ''
 FileUtils.ln_s dir + '.zshrc', home + '.zshrc', force: true
+
+# Install vim config
+print 'Link vim(.vimrc) config to ', home + '.vimrc', new_line
+puts ''
+FileUtils.ln_s dir + 'vim/.vimrc', home + '.vimrc', force: true
+
+print 'Link neovim(init.vim) config to ', home + '.config/nvim/init.vim', new_line
+puts ''
+FileUtils.mkdir_p home + '.config/nvim'
+FileUtils.ln_s dir + 'vim/init.vim', home + '.config/nvim/init.vim', force: true
