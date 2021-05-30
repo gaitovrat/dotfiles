@@ -4,6 +4,8 @@ require 'fileutils'
 
 system "brew bundle"
 
-# Install zsh config
 home = ENV['HOME'] + '/'
-FileUtils.cp '.zshrc', home + '.zshrc'
+dir = __dir__ + '/'
+
+# Install zsh config
+FileUtils.ln_s dir + '.zshrc', home + '.zshrc', force: true
