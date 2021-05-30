@@ -22,6 +22,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'connorholyday/vim-snazzy'
 Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Plugin keybinding
@@ -32,6 +34,9 @@ nmap <leader>pc :PlugClean<cr>
 nmap <leader>ot :NERDTree<cr>
 
 nmap gss <Plug>(easymotion-overwin-f)
+
+nmap <leader>ff :Files<CR>
+nmap <leader>gf :GFiles<CR>
 
 if has('termguicolors')
     set termguicolors
