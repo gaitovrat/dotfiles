@@ -14,7 +14,6 @@ endif
 nmap <leader>lo :so ~/.config/nvim/init.vim<cr>
 
 call plug#begin('~/.vim/bundle')
-Plug 'lifepillar/vim-solarized8'
 Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
@@ -37,11 +36,3 @@ nmap gss <Plug>(easymotion-overwin-f)
 
 nmap <leader>ff :Files<CR>
 nmap <leader>gf :GFiles<CR>
-
-if has('termguicolors')
-    set termguicolors
-endif
-
-set background=dark
-colorscheme solarized8
-
