@@ -14,6 +14,7 @@ endif
 nmap <leader>lo :so ~/.config/nvim/init.vim<cr>
 
 call plug#begin('~/.vim/bundle')
+Plug 'ntk148v/vim-horizon'
 Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
@@ -23,6 +24,7 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " Plugin keybinding
@@ -36,3 +38,10 @@ nmap gss <Plug>(easymotion-overwin-f)
 
 nmap <leader>ff :Files<CR>
 nmap <leader>gf :GFiles<CR>
+
+if has('termguicolors')
+    set termguicolors
+endif
+colorscheme horizon
+highlight Normal guibg=black guifg=white
+let g:lightline = {'colorscheme' : 'horizon'}
