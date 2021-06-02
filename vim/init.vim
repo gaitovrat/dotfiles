@@ -43,5 +43,4 @@ if has('termguicolors')
     set termguicolors
 endif
 colorscheme horizon
-highlight Normal guibg=black guifg=white
 let g:lightline = {'colorscheme' : 'horizon'}
