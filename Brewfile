@@ -1,11 +1,11 @@
 # Brewfile
-
 # Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "d12frosted/emacs-plus"
 
 # Fomulaes
 brew "node"
@@ -14,7 +14,7 @@ brew "python"
 brew "go"
 brew "java"
 brew "maven"
-brew "nvim"
+brew "nvim", args: ["HEAD"]
 brew "mas"
 brew "fzf"
 brew "rg"
@@ -23,7 +23,6 @@ brew "fd"
 # Casks
 cask "iterm2"
 cask "jetbrains-toolbox"
-cask "visual-studio-code"
 
 # Mac app store apps
 mas "Telegram", id: 747648890
