@@ -22,6 +22,7 @@ brew "ripgrep"
 brew "fd"
 brew "coreutils"
 brew "emacs-plus@28", args: ["with-elrumo2-icon", "with-no-titlebar", "with-native-comp"]
+brew "shellcheck"
 
 # Casks
 cask "iterm2"
