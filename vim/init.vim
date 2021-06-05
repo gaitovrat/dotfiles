@@ -14,7 +14,6 @@ endif
 nmap <leader>lo :so ~/.config/nvim/init.vim<cr>
 
 call plug#begin('~/.vim/bundle')
-Plug 'ntk148v/vim-horizon'
 Plug 'tpope/vim-commentary'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
@@ -26,6 +25,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'dracula/vim', { 'as': 'dracula' } 
 call plug#end()
 
 " Plugin keybinding
@@ -43,8 +43,8 @@ nmap <leader>gf :GFiles<CR>
 if has('termguicolors')
     set termguicolors
 endif
-colorscheme horizon
-let g:lightline = {'colorscheme' : 'horizon'}
+colorscheme dracula
+let g:lightline = {'colorscheme' : 'dracula'}
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
