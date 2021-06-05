@@ -17,8 +17,11 @@ brew "maven"
 brew "nvim", args: ["HEAD"]
 brew "mas"
 brew "fzf"
-brew "rg"
+brew "git"
+brew "ripgrep"
 brew "fd"
+brew "coreutils"
+brew "emacs-plus@28", args: ["with-elrumo2-icon", "with-no-titlebar", "with-native-comp"]
 
 # Casks
 cask "iterm2"
