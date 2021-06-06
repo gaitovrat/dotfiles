@@ -23,5 +23,4 @@ cask "jetbrains-toolbox"
 mas "Telegram", id: 747648890
 mas "Spark", id: 1176895641
 mas "XCode", id: 497799835
-mas "Bear", id: 1091189122
 mas "Twitter", id: 1482454543
