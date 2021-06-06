@@ -5,7 +5,6 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "d12frosted/emacs-plus"
 
 # Fomulaes
 brew "node"
@@ -14,12 +13,7 @@ brew "python"
 brew "go"
 brew "java"
 brew "maven"
-brew "nvim", args: ["HEAD"]
 brew "mas"
-brew "fzf"
-brew "git"
-brew "ripgrep"
-brew "fd"
 
 # Casks
 cask "iterm2"
