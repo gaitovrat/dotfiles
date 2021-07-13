@@ -42,7 +42,7 @@ map <leader>wk <c-w>k
 map <leader>v :vsplit<cr>
 map <leader>s :split<cr>
 
-nmap <leader>fs :w<cr>
-nmap <leader>wq :q<cr>
-nmap <leader>wx :x<cr>
+nmap <leader>fw :w<cr>
+nmap <leader>fq :q<cr>
+nmap <leader>fx :x<cr>
 
