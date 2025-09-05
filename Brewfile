@@ -1,0 +1,6 @@
+brew "git"
+cask "1password"
+cask "1password-cli"
+cask "alfred"
+cask "docker-desktop"
+cask "mac-mouse-fix"
