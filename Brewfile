@@ -1,4 +1,5 @@
 brew "git"
+brew "wget"
 cask "1password"
 cask "1password-cli"
 cask "alfred"
